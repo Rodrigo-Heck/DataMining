@@ -1,0 +1,22 @@
+ --| Sempre que teve os itemsets abaixo também teve OBITO |--
+
+Confiança: 0.39  []  Suporte: 0.39
+
+Confiança: 0.42  ['CARDIOPATI']  Suporte: 0.23
+
+Confiança: 0.42  ['DIABETES']  Suporte: 0.17
+
+Confiança: 0.48  ['IDOSO']  Suporte: 0.32
+
+Confiança: 0.45  ['DIABETES', 'CARDIOPATI']  Suporte: 0.10
+
+Confiança: 0.36  ['CARDIOPATI']  Suporte: 0.19
+
+Confiança: 0.48  ['IDOSO', 'CARDIOPATI']  Suporte: 0.19
+
+Confiança: 0.48  ['IDOSO', 'DIABETES']  Suporte: 0.14
+
+Confiança: 0.39  ['DIABETES', 'CARDIOPATI']  Suporte: 0.09
+
+Confiança: 0.49  ['IDOSO', 'DIABETES', 'CARDIOPATI']  Suporte: 0.09
+

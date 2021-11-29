@@ -8,7 +8,9 @@ import pandas as pd
 import treatmentFunctions as tf
 
 
-dw = pd.read_csv('INFLUD-04-10-2021.csv', sep=";")
+dw = pd.read_csv(
+    '../DataSetPortalBrasileiroDadosAbertos/INFLUD-04-10-2021.csv',
+    sep=";")
 
 dropColumns = ["DT_NOTIFIC",
                "SEM_NOT",
