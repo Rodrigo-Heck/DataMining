@@ -18,9 +18,6 @@ def filters_only_covid_cases(dw):
     return(dw)
 
 
-##############################
-
-
 def treating_age(dw):
     print("Tratando Coluna DT_NASC")
     dw = dw[dw["DT_NASC"].notna()]
