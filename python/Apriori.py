@@ -10,19 +10,24 @@ import DataProcess as ids
 
 dados = ids.dataWarehouse
 
+support = 0.05
+confidence = 0.35
 
 regras = apriori(
                  dados,
-                 min_support=0.05,
-                 min_confidence=0.35,
-                 min_lift=1.0,
-                 min_lenght=1
+                 min_support=support,
+                 min_confidence=confidence,
                  )
 
 resultados = list(regras)
 
 with open("../Regras_associacao.txt", "w") as arquivo:
+    arquivo.write("======================================\n")
+    arquivo.write("Suporte Mínimo: " + str(support) + "\n")
+    arquivo.write("Confiança Mínima: " + str(confidence) + "\n")
+    arquivo.write("======================================\n\n")
     arquivo.write(" --| Sempre que teve os itemsets abaixo também teve OBITO |--\n\n")
+
     for i in range(len(resultados)):
         for ii in resultados[i][2]:
             if("OBITO" == list(ii.items_add)[0]):
